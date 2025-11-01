@@ -1,0 +1,52 @@
+# ----------------------------
+# 🧠 Python & Environment
+# ----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+*.db
+*.DS_Store
+.env
+venv/
+vidsum_env/
+.env/
+.venv/
+pip-wheel-metadata/
+
+# ----------------------------
+# ⚙️ Streamlit & Temp Data
+# ----------------------------
+temp/
+summaries/
+*.wav
+*.mp3
+*.mp4
+*.txt
+*.csv
+*.json
+
+# ----------------------------
+# 🧱 Build & Cache
+# ----------------------------
+build/
+dist/
+*.egg-info/
+.cache/
+.cache/*
+*.egg
+.eggs/
+.ipynb_checkpoints/
+*.bak
+*.swp
+
+# ----------------------------
+# 🐳 Docker & System
+# ----------------------------
+*.tar
+*.pid
+*.sock
+*.log
+docker-compose.override.yml
