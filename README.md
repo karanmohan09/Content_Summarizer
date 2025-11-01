@@ -23,64 +23,43 @@ Built with a **modular Python architecture**, **Streamlit web interface**, and f
 
 ## 🧱 Project Structure
 
-`📦 Content_Summarizer_EndToEnd/
+📦 **Content_Summarizer_EndToEnd/**
 │
 ├── app/
-│   ├── api.py # FastAPI backend    
-|   ├── ui.py # Streamlit web app    
-|   |── __init__.py
+│   ├── api.py               # FastAPI backend
+│   ├── ui.py                # Streamlit web app
+│   └── __init__.py
 │
 ├── core/
-│   ├── transcriber.py # Whisper transcription logic 
-│   ├── summarizer.py # BART summarization logic
-│   ├── evaluator.py # ROUGE metric evaluator 
-│   |── __init__.py
+│   ├── transcriber.py       # Whisper transcription logic
+│   ├── summarizer.py        # BART summarization logic
+│   ├── evaluator.py         # ROUGE metric evaluator
+│   └── __init__.py
 │
 ├── utils/
-│   ├── io_utils.py # Helper functions (save/load) 
-│   |── __init__.py
+│   ├── io_utils.py          # Helper functions (save/load)
+│   └── __init__.py
 │
-├── main.py # FastAPI entrypoint 
-├── Dockerfile # Docker configuration 
+├── main.py                  # FastAPI entrypoint
+├── Dockerfile               # Docker configuration
 ├── .dockerignore
 ├── .gitignore
-└── requirements.txt` 
+└── requirements.txt
 
 ----------
 
 ## 🧠 Tech Stack
 
-Component
+| Component        | Technology                                         |
+|------------------|----------------------------------------------------|
+| Frontend (UI)    | Streamlit                                          |
+| Backend API      | FastAPI                                            |
+| Transcription    | OpenAI Whisper                                     |
+| Summarization    | BART / SAMSum via Hugging Face Transformers        |
+| Language         | Python 3.10                                        |
+| Containerization | Docker                                             |
+| Evaluation       | ROUGE Score                                        |
 
-Technology
-
-**Frontend (UI)**
-
-Streamlit
-
-**Backend API**
-
-FastAPI
-
-**Transcription**
-
-OpenAI Whisper
-
-**Summarization**
-
-BART / SAMSum via Hugging Face Transformers
-
-**Language**
-
-Python 3.10
-
-**Containerization**
-
-Docker
-
-**Evaluation**
-
-ROUGE Score
 
 ----------
 
@@ -152,29 +131,12 @@ ROUGE Score
 
 ## 🧰 Environment Variables (Optional)
 
-Variable
+| Variable              | Description                         | Default                                |
+|------------------------|-------------------------------------|----------------------------------------|
+| `MODEL_NAME`           | Hugging Face summarization model     | `philschmid/bart-large-cnn-samsum`     |
+| `WHISPER_MODEL`        | Whisper model size                   | `small`                                |
+| `STREAMLIT_SERVER_PORT`| Streamlit port                       | `8501`                                |
 
-Description
-
-Default
-
-`MODEL_NAME`
-
-Hugging Face summarization model
-
-`philschmid/bart-large-cnn-samsum`
-
-`WHISPER_MODEL`
-
-Whisper model size
-
-`small`
-
-`STREAMLIT_SERVER_PORT`
-
-Streamlit port
-
-`8501`
 
 ----------
 
