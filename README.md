@@ -21,36 +21,6 @@ Built with a **modular Python architecture**, **Streamlit web interface**, and f
 
 ----------
 
-## 🧱 Project Structure
-
-📦 **Content_Summarizer_EndToEnd/**
-
-Content_Summarizer_EndToEnd/
-│
-├── app/
-│   ├── api.py             # FastAPI backend
-│   ├── ui.py              # Streamlit web app
-│   └── __init__.py
-│
-├── core/
-│   ├── transcriber.py     # Whisper transcription logic
-│   ├── summarizer.py      # BART summarization logic
-│   ├── evaluator.py       # ROUGE metric evaluator
-│   └── __init__.py
-│
-├── utils/
-│   ├── io_utils.py        # Helper functions (save/load)
-│   └── __init__.py
-│
-├── main.py                # FastAPI entrypoint
-├── Dockerfile             # Docker configuration
-├── .dockerignore
-├── .gitignore
-└── requirements.txt
-
-
-----------
-
 ## 🧠 Tech Stack
 
 | Component        | Technology                                         |
